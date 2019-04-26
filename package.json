@@ -1,0 +1,71 @@
+{
+  "name": "node-rest-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "start": "NODE_ENV=production node ./app.js",
+    "dev": "NODE_ENV=development  nodemon ./app.js",
+    "testMode": "NODE_ENV=test  nodemon ./app.js",
+    "test2": "./node_modules/mocha/bin/mocha -c -r chai -R spec -t 50000 -s 2000",
+    "test": "./node_modules/mocha/bin/mocha test/*.coffee --require coffeescript/register -c -r chai -R spec -t 50000 -s 2000"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mattstone/node-rest-api.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mattstone/node-rest-api/issues"
+  },
+  "homepage": "https://github.com/mattstone/node-rest-api#readme",
+  "dependencies": {
+    "axios": "^0.18.0",
+    "body-parser": "1.7.0",
+    "chai": "*",
+    "compression": "^1.2.0",
+    "connect-redis": "*",
+    "cookie-parser": "*",
+    "cors": "*",
+    "csurf": "*",
+    "email-templates": "^5.0.3",
+    "email-validator": "^2.0.4",
+    "errorhandler": "*",
+    "express": "^4.8.7",
+    "express-resource": "*",
+    "express-session": "*",
+    "financejs": "^4.1.0",
+    "findit": "0.1.2",
+    "hat": "*",
+    "hiredis": "*",
+    "inflection": "*",
+    "mathjs": "^5.7.0",
+    "method-override": "*",
+    "mocha": "*",
+    "moment": "^2.17.1",
+    "moment-timezone": "^0.5.13",
+    "mongoose": "^5.1.1",
+    "mongoose-unique-validator": "^2.0.2",
+    "morgan": "*",
+    "ms": "*",
+    "numbers": "^0.7.0",
+    "node-uuid": "^1.4.8",
+    "nodemailer": "^5.1.1",
+    "nodemon": "^1.18.10",
+    "passport": "*",
+    "passport-local": "*",
+    "pug": "^2.0.3",
+    "redis": "*",
+    "redis-delete-wildcard": "*",
+    "request": "*",
+    "socket.io": "*",
+    "socket.io-client": "*",
+    "typeof": "^1.0.0",
+    "sync-request": "^4.0.2",
+    "validator": "*"
+  },
+  "devDependencies": {
+    "coffeescript": "^2.3.2"
+  }
+}
